@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+ 
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* サイト全体のフォントデザイン */
+h1, main {
+  font-family: 'Kaushan', cursive, sans-serif;
+}
+
+main {
+  margin: 33px;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #fff
+}
