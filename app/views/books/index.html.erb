@@ -4,7 +4,7 @@
   <body>
     <h1>Books</h1>
     <table>
-   
+
       <thead>
         <tr>
           <th>Title</th>
@@ -35,7 +35,19 @@
       </tbody>
     </table>
     <h2>New book</h2>
-
+    <%= form_with(model: @book.new, url:'/books/new', method: :post, local: true) do |f| %>
+      <div class="form">
+        <p>Title</p>
+        <%= f.text_field :title %>
+      </div>
+      <div class="form">
+        <p>Body</p>
+        <%= f.text_ares :body %>
+      </div>
+      <div class="action">
+        <%= f.submit 'Create Book' %>
+      </div>
+    <% end %>
 
 
 
