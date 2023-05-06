@@ -21,15 +21,27 @@
   box-sizing: border-box;
 }
 
-/* サイト全体のフォントデザイン */
-h1, main {
-  font-family: 'Kaushan', cursive, sans-serif;
+/* サイト全体のフォントデザイン */ 
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
-main {
+body {
   margin: 33px;
   color: #333;
   font-size: 13px;
   line-height: 18px;
   background-color: #fff
+}
+
+p {
+  margin: 33px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+span {
+  margin: 33px;
 }
